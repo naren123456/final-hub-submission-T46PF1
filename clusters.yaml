@@ -1,0 +1,7 @@
+- alias: hasura
+  config:
+    configmap: controller-conf
+    namespace: begun51-hasura
+  data: null
+  kubeContext: begun51
+  name: begun51

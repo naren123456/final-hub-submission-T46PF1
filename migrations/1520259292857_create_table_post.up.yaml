@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "post"("post_id" serial NOT NULL, "status_id" integer NOT NULL,
+      "media_id" integer , "timestamp" timestamptz NOT NULL DEFAULT now(), "hasura_id"
+      integer NOT NULL, PRIMARY KEY ("post_id") )
+  type: run_sql
+- args:
+    name: post
+  type: add_existing_table_or_view
